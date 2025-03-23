@@ -3,20 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS SELECTORS</title>
+    <title>Document</title>
     <style>
-        /* element selector */
         .red{
-            background-color:red;
+            background-color:hotpink;
         }
+        .green{
+            background-color:green;
+        }
+        div > p{
+            background-color: orange;
+        }
+        /* for everything */
+        *{
+            margin: 0;
+        }
+
+        a{
+            background-color: yellow;
+        }
+        a:visited{
+            background-color:cyan;
+        }
+
     </style>
 </head>
 <body>
-    <div id="1">
-        this is a div
+    <div class = "red">
+        i am a div
     </div>
-    <div class="red">
-        div 2
+
+    <div class = "green">
+        i am a div
+        <p>ima paragraph inside div</p>
     </div>
+
+    <a href="https://www.google.com/" target="_blank">google</a>
+    <a href="https://www.facebook.com/" target="_blank">facebook</a>
 </body>
 </html>
